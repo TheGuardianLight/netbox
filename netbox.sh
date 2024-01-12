@@ -26,7 +26,6 @@ fi
 # Création de la base de donnée
 echo "Connection à postgresql. Vous devrez créer la base de donnée."
 sudo -u postgres psql
-exit
 
 # Installation de Redis
 echo "Installation de Redis"
