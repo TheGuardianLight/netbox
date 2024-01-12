@@ -11,3 +11,5 @@ fi
 # Mise à jour des paquets et installation des dépendances
 echo "Mise à jour des paquets puis installation des dépendances..."
 apt update && apt upgrade -y
+
+# Installation de Postgresql
