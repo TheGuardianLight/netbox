@@ -38,7 +38,6 @@ echo "Installation de Netbox et de ses dépendances..."
 sudo apt install -y python3 python3-pip python3-venv python3-dev build-essential libxml2-dev libxslt1-dev libffi-dev libpq-dev libssl-dev zlib1g-dev
 mkdir -p /opt/netbox/
 cd /opt/netbox/
-pip install -r requirement.txt
 apt install -y git
 git clone -b master --depth 1 https://github.com/netbox-community/netbox.git .
 
@@ -58,6 +57,7 @@ sleep 60
 vim configuration.py
 
 /opt/netbox/upgrade.sh
+pip install -r requirement.txt
 
 # Création du super utilisateur
 echo "Création du super utilisateur"
