@@ -16,7 +16,7 @@ apt update && apt upgrade -y
 echo "Installation de Postgresql"
 apt install -y postgresql
 echo "Vérifiez la version de postgresql"
-psql -V$
+psql -V
 echo "Est-ce correct pour vous ? (Y/N)"
 read pgsql-version
 if [$pgsql-version = "Y"]; then
